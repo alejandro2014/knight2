@@ -1,14 +1,14 @@
-#include <QApplication>
-#include <QLabel>
-#include <QWidget>
+#include "toolbar.h"
 
-int main(int argc, char *argv[ ]) {
-    QApplication app(argc, argv);
-    QLabel hola("<center>Ejemplo Qt para Ubunlog</center>");
-    
-    hola.setWindowTitle("Mi primer programa Qt");
-    hola.resize(600, 400);
-    hola.show();
+int main(int argc, char *argv[]) {
 
-    return app.exec();
+  QApplication app(argc, argv);
+
+  Toolbar window;
+
+  window.resize(300, 200);
+  window.setWindowTitle("QToolBar");
+  window.show();
+
+  return app.exec();
 }
